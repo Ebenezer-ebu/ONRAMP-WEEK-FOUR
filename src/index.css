@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../utils/images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  /* position: absolute; */
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  position: absolute;
+  padding: 10%;
+}
+
+.section1 {
+  padding: 20px 0 20px 0;
+  width: 50%;
+  height: 100%;
+}
+
+.section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+h1 {
+  padding: 20px 0 20px 0;
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top {
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+form {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  width: 96%;
+  height: 45px;
+  /* margin-top: 20px; */
+  border: none;
+  border-radius: 3px;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  /* margin-top: 20px; */
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+
+.bottom {
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.bottom span {
+  color: hsl(0, 100%, 74%);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: absolute;
+  margin-left: 86%;
+  margin-top: 2%;
+  display: none;
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  float: right;
+  padding-top: 4px;
+  font-size: 12px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  button {
+    width: 101%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    padding: 1%;
+  }
+  .section1 {
+    padding: 10px 0;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+  }
+  h1 {
+    padding: 60px 0 10px 0;
+    font-size: 25px;
+  }
+  .section2 {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+  }
+}
